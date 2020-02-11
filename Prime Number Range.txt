@@ -1,0 +1,33 @@
+print("You can type 'zero' when you want to end the program.")
+while True:
+    number=int(input("enter a number:"))
+    if number==0:
+        break
+    if number==1:
+        print("You can't use",1,"for this program.Please enter a diffrent value.")
+        continue
+
+    def low(sayý):
+        while True:
+            m=0
+            for i in range(2,sayý):
+                if sayý%i==0:
+                    m+=1
+            if m==0:
+                return sayý
+            else:
+                sayý-=1
+    def high(sayý):
+        while True:
+            m=0
+            for i in range(2,sayý):
+                if sayý%i==0:
+                    m+=1
+            if m==0:
+                return sayý
+            else:
+                sayý+=1
+    if low(number)==high(number):
+        print("\nThe number which you Input is already a prime number.")
+    else:
+        print("The number which you Input is between",low(number),"and",high(number))
