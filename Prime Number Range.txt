@@ -2,31 +2,32 @@ print("You can type 'zero' when you want to end the program.")
 while True:
     number=int(input("enter a number:"))
     if number==0:
+        print("Program ended")
         break
     if number==1:
         print("You can't use",1,"for this program.Please enter a diffrent value.")
         continue
 
-    def low(sayı):
+    def low(sayÃ½):
         while True:
             m=0
-            for i in range(2,sayı):
-                if sayı%i==0:
+            for i in range(2,sayÃ½):
+                if sayÃ½%i==0:
                     m+=1
             if m==0:
-                return sayı
+                return sayÃ½
             else:
-                sayı-=1
-    def high(sayı):
+                sayÃ½-=1
+    def high(sayÃ½):
         while True:
             m=0
-            for i in range(2,sayı):
-                if sayı%i==0:
+            for i in range(2,sayÃ½):
+                if sayÃ½%i==0:
                     m+=1
             if m==0:
-                return sayı
+                return sayÃ½
             else:
-                sayı+=1
+                sayÃ½+=1
     if low(number)==high(number):
         print("\nThe number which you Input is already a prime number.")
     else:
